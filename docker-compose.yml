@@ -1,8 +1,8 @@
-version: '3.3'
+version: '3.9'
 services:
-    apt-web:
+    latextableviewer:
         restart: always
-        image: swiftlatex/apt
-        container_name: apt
+        build: .
+        container_name: endpoint
         ports:
-            - 5000:5000
+            - 80:80
